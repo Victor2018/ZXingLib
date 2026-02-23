@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QrCodeScanActivity">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.victor.camera.lib.ViewFinderView
+        android:id="@+id/mViewFinderView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:ViewFinderStyle="popular"
+        app:vfvLaserStyle="line"
+        app:vfvLaserMovementSpeed="4dp"
+        app:vfvLabelTextLocation="top"
+        app:vfvLabelTextPadding="24dp"
+        app:vfvLabelText="将二维码放入框内即可扫描"
+        app:vfvLabelTextColor="@color/white"
+        app:vfvLabelTextSize="14sp"
+        app:vfvShowTorchIcon="true"
+        app:vfvTorchIconPadding="5dp"
+        app:vfvTorchOnDrawable="@mipmap/ic_torch_on"
+        app:vfvTorchOffDrawable="@mipmap/ic_torch_off"
+        app:vfvTorchOnText="点击关闭手电筒"
+        app:vfvTorchOffText="点击开启手电筒"
+        app:vfvTorchTextColor="@color/white"
+        app:vfvTorchTextSize="14sp"
+        app:vfvTorchIconTextPadding="74dp"
+        app:vfvTorchIconTextSpacing="8dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <Button
+            android:id="@+id/mBtnMultiScan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="连续扫描（识别多种格式）"/>
+
+        <Button
+            android:id="@+id/mBtnQrScan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="二维码扫描"/>
+
+        <Button
+            android:id="@+id/mBtnFullScreenQrScan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="二维码扫描(全屏)"/>
+
+        <Button
+            android:id="@+id/mBtnScanImageQrCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="图片识别"/>
+
+        <Button
+            android:id="@+id/mBtnGenerateQrCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="二维码生成"/>
+
+        <Button
+            android:id="@+id/mBtnGenerateBarCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="条形码码生成"/>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
